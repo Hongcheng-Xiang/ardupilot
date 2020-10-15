@@ -11,8 +11,8 @@ uint32_t t_cur_usr;                  //当前时间
 uint32_t t_del_usr;                 //每段当前运行时间
 int alt_tar_usr = 20;
 int delt_alt = 2;
-float radius_usr = 5000.0;       //cm
-const Vector3f vel_ned_usr(-5.0f * 100.0f, 0.0f * 100.0f, 0.0f * 100.0f);      //mode_guided.set_velocity()的第一个参数，单位cms
+float radius_usr = 200.0;       //cm
+const Vector3f vel_ned_usr(-1.0f * 100.0f, 0.0f * 100.0f, 0.0f * 100.0f);      //mode_guided.set_velocity()的第一个参数，单位cms
 
 //motors.armed(true); 解锁  motors.armed(false); 上锁
 void Copter::fly_to_swh(){

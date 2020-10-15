@@ -209,7 +209,8 @@ const AP_Scheduler::Task Copter::scheduler_tasks[] = {
     SCHED_TASK(publish_osd_info, 1, 10),
 #endif
     
-    //SCHED_TASK(fly_to_swh,       1,100),       //guided模式下执行飞行计划  对应task01.cpp
+    //SCHED_TASK(fly_to_swh,       1,  100),        //guided模式下执行飞行计划  对应task01.cpp
+    SCHED_TASK(loc_print,        0.5,100),       //sitl的console窗口显示当前位置信息，对应loc_print.cpp
 };
 
 

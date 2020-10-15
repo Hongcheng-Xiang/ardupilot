@@ -660,7 +660,7 @@ private:
     
 
     void fly_to_swh();
-
+    void loc_print();
 
     // Attitude.cpp
     float get_pilot_desired_yaw_rate(int16_t stick_angle);
