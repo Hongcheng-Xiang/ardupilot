@@ -661,6 +661,8 @@ private:
 
     void fly_to_swh();
     void loc_print();
+    void fly_line();
+    void fly_fol01();
 
     // Attitude.cpp
     float get_pilot_desired_yaw_rate(int16_t stick_angle);

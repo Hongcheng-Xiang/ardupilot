@@ -209,8 +209,14 @@ const AP_Scheduler::Task Copter::scheduler_tasks[] = {
     SCHED_TASK(publish_osd_info, 1, 10),
 #endif
     
-    //SCHED_TASK(fly_to_swh,       1,  100),        //guided模式下执行飞行计划  对应task01.cpp
-    SCHED_TASK(loc_print,        0.5,100),       //sitl的console窗口显示当前位置信息，对应loc_print.cpp
+
+
+
+
+    //SCHED_TASK(fly_to_swh,       10,  100),        //guided模式下执行飞行计划  对应fly_to_swh.cpp
+    //SCHED_TASK(loc_print,        0.25,100),         //sitl的console窗口显示当前位置信息，对应loc_print.cpp
+    //SCHED_TASK(fly_fol01,        10,100),        //测试僚机飞行所需要进行的坐标计算
+    //SCHED_TASK(fly_line,        10, 100),         //以飞行直线来测试经纬度与米的转化
 };
 
 
